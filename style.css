@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 body {
-    background-color: lavender;
+    background-image: url('bg-image1.jpg');
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
