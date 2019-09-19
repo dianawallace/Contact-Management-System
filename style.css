@@ -56,3 +56,10 @@ h1 {
     background-color: rgb(127,146,186);
     font-weight: bolder;
 }
+
+.cms-edit, .cms-delete, .cms-add-entry-column {
+    flex-basis: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
