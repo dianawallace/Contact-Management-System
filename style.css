@@ -39,3 +39,20 @@ h1 {
     text-overflow: ellipsis;
 }
 
+.cms-name {
+    flex-basis: 20%;
+}
+
+.cms-phone {
+    flex-basis: 20%
+}
+
+.cms-address {
+    flex-grow: 2;
+    flex-basis: 20%;
+}
+
+.cms-header {
+    background-color: rgb(127,146,186);
+    font-weight: bolder;
+}
