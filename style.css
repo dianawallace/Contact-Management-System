@@ -19,18 +19,18 @@ h1 {
     text-shadow: 5px 5px 5px black;
 }
 
-.css-table-container {
+.cms-table-container {
     font-size: 20px;
     margin-top: 35px;
     width: 80%;
     margin: auto;
 }
 
-.css-table-row {
+.cms-table-row {
     display: flex;
 }
 
-.css-table-column {
+.cms-table-column {
     background-color: rgb(127,146,186);
     margin: 2px;
     padding: 15px;
@@ -71,5 +71,6 @@ h1 {
     top: 50px;
     position: absolute;
     margin-left: calc(50% - 250px);
+    background-color: rgb(127,146,186);
 }
 
