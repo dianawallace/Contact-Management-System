@@ -96,8 +96,26 @@ h1 {
     left: 0;
 }
 
+#newPersonSubmitBtn {
+    background-color: rgb(47, 95, 151);
+}
 
+#newPersonCancelBtn {
+    background-color: rgb(151, 47, 47);
+}
 
+button {
+    padding 15px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    padding 13px;
+}
 
 
 
