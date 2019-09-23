@@ -21,5 +21,9 @@ let refreshDomTable = () => {
     
     let cmsTableKeys = Object.keys(cmsTable);
     let tableContainer = document.getElementById('cmsTableContainer');
-    
+    let oldTableBody = document.getElementById('tablebody');
+    tableContainer.removeChild(oldTableBody);
+
+    let newTableBody = document.createElement('span');
+    newTableBody.id = 'tableBody';
 }
