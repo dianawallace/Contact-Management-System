@@ -16,3 +16,10 @@ let cmsTableDemo = {
         'address': '9876 Artist Way, Seattle, WA, 66541'
     }    
 }; 
+
+let refreshDomTable = () => {
+    
+    let cmsTableKeys = Object.keys(cmsTable);
+    let tableContainer = document.getElementById('cmsTableContainer');
+    
+}
