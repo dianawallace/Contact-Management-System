@@ -35,6 +35,13 @@ let refreshDomTable = () => {
         let currentEditBtn = document.createElement('div');
         let currentDeleteBtn = document.createElement('div');
 
+        currentRow.className = 'cms-table-row';
+        currentNameCol.className = 'cms-table-column cms-name';
+        currentPhoneCol.className = 'cms-table-column cms-phone';
+        currentAddressCol.className = 'cms-table-column cms-phone';
+        currentEditBtn.className = 'cms-table-column cms-edit';
+        currentDeleteBtn.className = 'cms-table-column cms-delete';
+
         
     }
 }
