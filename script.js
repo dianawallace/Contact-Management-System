@@ -42,6 +42,10 @@ let refreshDomTable = () => {
         currentEditBtn.className = 'cms-table-column cms-edit';
         currentDeleteBtn.className = 'cms-table-column cms-delete';
 
+        currentNameCol.innerHTML = cmsTableKeys[i];
+        currentPhoneCol.innerHTML = cmsTable[cmsTableKeys[i]].phone;
+        currentAddressCol.innerHTML = cmsTable[cmsTableKeys[i]].address;
+
         
     }
 }
