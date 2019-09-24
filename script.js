@@ -26,4 +26,15 @@ let refreshDomTable = () => {
 
     let newTableBody = document.createElement('span');
     newTableBody.id = 'tableBody';
+
+    for (let i = 0; i < cmsTableKeys.length; i++) {
+        let currentRow = document.createElement('div');
+        let currentNameCol = document.createElement('div');
+        let currentPhoneCol = document.createElement('div');
+        let currentAddressCol = document.createElement('div');
+        let currentEditBtn = document.createElement('div');
+        let currentDeleteBtn = document.createElement('div');
+
+        
+    }
 }
