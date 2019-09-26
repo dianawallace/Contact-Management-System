@@ -65,6 +65,11 @@ let refreshDomTable = () => {
         newPersonName.value = '';
         newPersonPhone.value = '';
         newPersonAddress.value = '';
+
+        let newPersonModal = document.getElementById('newPersonModal');
+        let backdrop = document.getElementById('backdrop');
+
+
     })
 
 }
