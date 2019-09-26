@@ -48,5 +48,13 @@ let refreshDomTable = () => {
 
         currentEditBtn.innerHTML = '<i class="fas fa-edit"></i>';
         currentDeleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
+
+        currentRow.appendChild(currentNameCol);
+        currentRow.appendChild(currentPhoneCol);
+        currentRow.appendChild(currentAddressCol);
+        currentRow.appendChild(currentEditCol);
+        currentRow.appendChild(currentDeleteCol);
+        newTableBody.appendChild(currentRow);
+
     }
 }
