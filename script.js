@@ -46,6 +46,7 @@ let refreshDomTable = () => {
         currentPhoneCol.innerHTML = cmsTable[cmsTableKeys[i]].phone;
         currentAddressCol.innerHTML = cmsTable[cmsTableKeys[i]].address;
 
-        
+        currentEditBtn.innerHTML = '<i class="fas fa-edit"></i>';
+        currentDeleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
     }
 }
