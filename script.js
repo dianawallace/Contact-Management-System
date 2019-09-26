@@ -57,4 +57,14 @@ let refreshDomTable = () => {
         newTableBody.appendChild(currentRow);
 
     }
+
+    let enableDisableNewUserModal = (option => {
+        let newPersonName = document.getElementById('newPersonName');
+        let newPersonPhone = document.getElementById('newPersonPhone');
+        let newPersonAddress = document.getElementById('newPersonAddress');
+        newPersonName.value = '';
+        newPersonPhone.value = '';
+        newPersonAddress.value = '';
+    })
+
 }
