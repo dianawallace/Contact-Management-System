@@ -74,4 +74,10 @@ let refreshDomTable = () => {
 
     })
 
+    let addNewEntryBtn = document.getElementById('cmsAddNewEntry');
+    let editBtns = document.getElementById('cms-edit')
+    let deleteBtns = document.getElementById('cms-delete');
+
+    
+
 }
