@@ -69,6 +69,8 @@ let refreshDomTable = () => {
         let newPersonModal = document.getElementById('newPersonModal');
         let backdrop = document.getElementById('backdrop');
 
+        newPersonModal.className = `${option}-modal`;
+        backdrop.className = `${option}-modal`;
 
     })
 
