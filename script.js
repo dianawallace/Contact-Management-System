@@ -58,7 +58,7 @@ let refreshDomTable = () => {
 
     }
 
-    let enableDisableNewUserModal = (option => {
+    let enableDisableNewUserModal = (option) => {
         let newPersonName = document.getElementById('newPersonName');
         let newPersonPhone = document.getElementById('newPersonPhone');
         let newPersonAddress = document.getElementById('newPersonAddress');
@@ -72,12 +72,12 @@ let refreshDomTable = () => {
         newPersonModal.className = `${option}-modal`;
         backdrop.className = `${option}-modal`;
 
-    })
+    }
 
     let addNewEntryBtn = document.getElementById('cmsAddNewEntry');
     let editBtns = document.getElementById('cms-edit')
     let deleteBtns = document.getElementById('cms-delete');
 
-    
+
 
 }
