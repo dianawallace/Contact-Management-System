@@ -83,8 +83,11 @@ let refreshDomTable = () => {
 
     newPersonSubmitBtn.addEventListener('click', () => {
         let newPersonName = document.getElementById('newPersonName').value.trim();
+        let newPersonPhone = document.getElementById('newPersonPhone').value.trim();
+        let newPersonAddress = document.getElementById('newPersonAddress').value.trim();
+    
         
 
-    })
+    });
 
 }
