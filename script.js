@@ -81,6 +81,10 @@ let refreshDomTable = () => {
     let newPersonSubmitBtn = document.getElementById('newPersonSubmitBtn');
     let newPersonCancelBtn = document.getElementById('newPersonCancelBtn');
 
-    
+    newPersonSubmitBtn.addEventListener('click', () => {
+        let newPersonName = document.getElementById('newPersonName').value.trim();
+        
+
+    })
 
 }
