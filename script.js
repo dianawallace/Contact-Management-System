@@ -78,6 +78,9 @@ let refreshDomTable = () => {
     let editBtns = document.getElementById('cms-edit')
     let deleteBtns = document.getElementById('cms-delete');
 
+    let newPersonSubmitBtn = document.getElementById('newPersonSubmitBtn');
+    let newPersonCancelBtn = document.getElementById('newPersonCancelBtn');
 
+    
 
 }
