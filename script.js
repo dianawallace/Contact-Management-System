@@ -86,8 +86,20 @@ let refreshDomTable = () => {
         let newPersonPhone = document.getElementById('newPersonPhone').value.trim();
         let newPersonAddress = document.getElementById('newPersonAddress').value.trim();
     
-        
+        if(newPersonName === '')
+            newPersonName.className = 'input-err';
+        else 
+            newPersonName.className = '';   
 
+        if(newPersonPhone === '')
+            newPersonPhone.className = 'input-err';
+        else 
+            newPersonPhone.className = '';   
+
+        if(newPersonAddress === '')
+            newPersonAddress.className = 'input-err';
+        else 
+            newPersonAddress.className = '';   
     });
 
 }
