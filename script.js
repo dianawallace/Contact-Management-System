@@ -107,7 +107,9 @@ let refreshDomTable = () => {
                 'phone': newPersonPhone,
                 'address': newPersonAddress
             }
-            
+            localStorage.setItem(tableKey, JSON.stringify(cmsTable));
+            enableDisableNewUserModal('disable');
+            refreshDomTable();
         }
 
     });
