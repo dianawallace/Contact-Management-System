@@ -19,7 +19,7 @@ let cmsTableDemo = {
 
 let refreshDomTable = () => {
     
-    let cmsTableKeys = Object.keys(cmsTable);
+    let cmsTableKeys = Object.keys(cmsTableDemo);
     let tableContainer = document.getElementById('cmsTableContainer');
     let oldTableBody = document.getElementById('tablebody');
     tableContainer.removeChild(oldTableBody);
@@ -111,7 +111,12 @@ let refreshDomTable = () => {
             enableDisableNewUserModal('disable');
             refreshDomTable();
         }
-
     });
+
+    addNewEntryBtn.addEventListener('click', () => {
+        enableDisableNewUserModal('enable');
+    });
+
+    refreshDomTable();
 
 }
