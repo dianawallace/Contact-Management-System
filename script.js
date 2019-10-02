@@ -99,7 +99,17 @@ let refreshDomTable = () => {
         if(newPersonAddress === '')
             newPersonAddress.className = 'input-err';
         else 
-            newPersonAddress.className = '';   
+            newPersonAddress.className = ''; 
+            
+        if(newPersonName !== '' && newPersonPhone !== '' && newPersonAddress !== '' ) {
+            let newPerson = {};
+            cmsTable[newPersonName] = {
+                'phone': newPersonPhone,
+                'address': newPersonAddress
+            }
+            
+        }
+
     });
 
 }
