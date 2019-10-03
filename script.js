@@ -19,9 +19,10 @@ let cmsTableDemo = {
 
 let refreshDomTable = () => {
     
-    let cmsTableKeys = Object.keys(cmsTableDemo);
+    cmsTable = cmsTableDemo;
+    let cmsTableKeys = Object.keys(cmsTable);
     let tableContainer = document.getElementById('cmsTableContainer');
-    let oldTableBody = document.getElementById('tablebody');
+    let oldTableBody = document.getElementById('tableBody');
     tableContainer.removeChild(oldTableBody);
 
     let newTableBody = document.createElement('span');
@@ -52,8 +53,8 @@ let refreshDomTable = () => {
         currentRow.appendChild(currentNameCol);
         currentRow.appendChild(currentPhoneCol);
         currentRow.appendChild(currentAddressCol);
-        currentRow.appendChild(currentEditCol);
-        currentRow.appendChild(currentDeleteCol);
+        currentRow.appendChild(currentEditBtn);
+        currentRow.appendChild(currentDeleteBtn);
         newTableBody.appendChild(currentRow);
 
     }
@@ -115,8 +116,8 @@ let refreshDomTable = () => {
 
     addNewEntryBtn.addEventListener('click', () => {
         enableDisableNewUserModal('enable');
-    });
-
-    refreshDomTable();
+    });    
 
 }
+
+refreshDomTable();
