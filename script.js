@@ -114,6 +114,9 @@ let refreshDOMTable = () => {
         }
     });
 
+    newPersonCancelBtn.addEventListener('click', () => {
+        enableDisableNewUserModal('disable');
+    });
     addNewEntryBtn.addEventListener('click', () => {
         enableDisableNewUserModal('enable');
     });    
