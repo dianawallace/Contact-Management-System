@@ -17,7 +17,7 @@ let cmsTableDemo = {
     }    
 }; 
 
-let refreshDomTable = () => {
+let refreshDOMTable = () => {
     
     cmsTable = cmsTableDemo;
     let cmsTableKeys = Object.keys(cmsTable);
@@ -110,7 +110,7 @@ let refreshDomTable = () => {
             }
             localStorage.setItem(tableKey, JSON.stringify(cmsTable));
             enableDisableNewUserModal('disable');
-            refreshDomTable();
+            refreshDOMTable();
         }
     });
 
@@ -120,4 +120,4 @@ let refreshDomTable = () => {
 
 }
 
-refreshDomTable();
+refreshDOMTable();
