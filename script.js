@@ -20,6 +20,7 @@ let cmsTableDemo = {
 let refreshDOMTable = () => {
     
     cmsTable = cmsTableDemo;
+
     let cmsTableKeys = Object.keys(cmsTable);
     let tableContainer = document.getElementById('cmsTableContainer');
     let oldTableBody = document.getElementById('tableBody');
@@ -27,6 +28,7 @@ let refreshDOMTable = () => {
 
     let newTableBody = document.createElement('span');
     newTableBody.id = 'tableBody';
+    tableContainer.appendChild(newTableBody);
 
     for (let i = 0; i < cmsTableKeys.length; i++) {
         let currentRow = document.createElement('div');
