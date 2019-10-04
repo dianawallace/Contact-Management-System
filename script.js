@@ -126,7 +126,8 @@ let refreshDOMTable = () => {
     for(let i = 0; i < editBtns.length; i++) {
         editBtns[i].addEventListener('click', ($event) => {
             let nameToEdit = $event.target.parentElement.children[0].innerText;
-            
+
+            let personToEdit = cmsTable[nameToEdit];
         })
     }
 
