@@ -121,7 +121,13 @@ let refreshDOMTable = () => {
     });
     addNewEntryBtn.addEventListener('click', () => {
         enableDisableNewUserModal('enable');
-    });    
+    });   
+    
+    for(let i = 0; i < editBtns.length; i++) {
+        editBtns[i].addEventListener('click', ($event) => {
+            
+        })
+    }
 
 }
 
