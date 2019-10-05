@@ -128,6 +128,10 @@ let refreshDOMTable = () => {
             let nameToEdit = $event.target.parentElement.children[0].innerText;
 
             let personToEdit = cmsTable[nameToEdit];
+            let newPersonName = document.getElementById('newPersonName');
+            let newPersonPhone = document.getElementById('newPersonPhone');
+            let newPersonAddress = document.getElementById('newPersonAddress');
+            
         })
     }
 
