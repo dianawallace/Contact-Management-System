@@ -131,7 +131,9 @@ let refreshDOMTable = () => {
             let newPersonName = document.getElementById('newPersonName');
             let newPersonPhone = document.getElementById('newPersonPhone');
             let newPersonAddress = document.getElementById('newPersonAddress');
-            
+            newPersonName.value = 'nameToEdit';
+            newPersonPhone.value = 'personToEdit.phone';
+            newPersonAddress.value = 'personToEdit.phone';  
         })
     }
 
