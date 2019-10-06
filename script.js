@@ -17,6 +17,15 @@ let cmsTableDemo = {
     }    
 }; 
 
+let enableDisableNameInput = (option) => {
+    let newPersonName = document.getElementById('newPersonName');
+
+    if(option === 'enable')
+        newPersonName.disabled = false;
+    else if (option === 'disable')
+        newPersonName.disabled = true;
+}
+
 let refreshDOMTable = () => {
     
     cmsTable = cmsTableDemo;
