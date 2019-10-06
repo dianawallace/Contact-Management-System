@@ -50,7 +50,7 @@ let refreshDOMTable = () => {
         currentRow.className = 'cms-table-row';
         currentNameCol.className = 'cms-table-column cms-name';
         currentPhoneCol.className = 'cms-table-column cms-phone';
-        currentAddressCol.className = 'cms-table-column cms-phone';
+        currentAddressCol.className = 'cms-table-column cms-address';
         currentEditBtn.className = 'cms-table-column cms-edit';
         currentDeleteBtn.className = 'cms-table-column cms-delete';
 
@@ -87,8 +87,8 @@ let refreshDOMTable = () => {
     }
 
     let addNewEntryBtn = document.getElementById('cmsAddNewEntry');
-    let editBtns = document.getElementById('cms-edit')
-    let deleteBtns = document.getElementById('cms-delete');
+    let editBtns = document.getElementsByClassName('cms-edit')
+    let deleteBtns = document.getElementsByClassName('cms-delete');
 
     let newPersonSubmitBtn = document.getElementById('newPersonSubmitBtn');
     let newPersonCancelBtn = document.getElementById('newPersonCancelBtn');
@@ -144,7 +144,7 @@ let refreshDOMTable = () => {
             let newPersonAddress = document.getElementById('newPersonAddress');
             newPersonName.value = 'nameToEdit';
             newPersonPhone.value = 'personToEdit.phone';
-            newPersonAddress.value = 'personToEdit.phone'; 
+            newPersonAddress.value = 'personToEdit.address'; 
             
             enableDisableNameInput('disable');
         })
