@@ -134,17 +134,17 @@ let refreshDOMTable = () => {
     
     for(let i = 0; i < editBtns.length; i++) {
         editBtns[i].addEventListener('click', ($event) => {
-            let nameToEdit = $event.target.parentElement.children[0].innerText;
-            
+            let nameToEdit = $event.target.parentElement.children[0].innerText;         
+            let personToEdit = cmsTable[nameToEdit];
+
             enableDisableNewUserModal('enable');
 
-            let personToEdit = cmsTable[nameToEdit];
             let newPersonName = document.getElementById('newPersonName');
             let newPersonPhone = document.getElementById('newPersonPhone');
             let newPersonAddress = document.getElementById('newPersonAddress');
-            newPersonName.value = 'nameToEdit';
-            newPersonPhone.value = 'personToEdit.phone';
-            newPersonAddress.value = 'personToEdit.address'; 
+            newPersonName.value = nameToEdit;
+            newPersonPhone.value = personToEdit.phone;
+            newPersonAddress.value = personToEdit.address; 
             
             enableDisableNameInput('disable');
         })
