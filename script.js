@@ -150,6 +150,13 @@ let refreshDOMTable = () => {
         })
     }
 
+    for (let i = 0; i < deleteBtns.length; i++) {
+        deleteBtns[i].addEventListener('click', ($event) => {
+            let nameToDelete = $event.target.parentElement.children[0].innerText;
+            
+        })
+    }
+
 }
 
 refreshDOMTable();
