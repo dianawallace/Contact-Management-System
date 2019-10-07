@@ -162,7 +162,7 @@ let refreshDOMTable = () => {
 }
 
 let deleteUserFromTable = (userName) => {
-    letTempTable = {};
+    let TempTable = {};
 }
 
 refreshDOMTable();
