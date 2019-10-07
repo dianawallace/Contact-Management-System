@@ -155,10 +155,14 @@ let refreshDOMTable = () => {
             let nameToDelete = $event.target.parentElement.children[0].innerText;
             let isSure = window.confirm('Are you sure you want to delete ' + nameToDelete + '?');
             if(isSure)
-                // deleteUserFromTable()
+                deleteUserFromTable();
         })
     }
 
+}
+
+let deleteUserFromTable = (userName) => {
+    letTempTable = {};
 }
 
 refreshDOMTable();
