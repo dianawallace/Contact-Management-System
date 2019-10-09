@@ -186,4 +186,4 @@ let init = () => {
     refreshDOMTable();
 }
 
-refreshDOMTable();
+init();
