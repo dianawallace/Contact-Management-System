@@ -169,6 +169,9 @@ let deleteUserFromTable = (userName) => {
             tempTable[cmsTableKeys[i]] = cmsTable[cmsTableKeys[i]];
         }
     }
+    cmsTable = tempTable;
+    localStorage.setItem(tableKey, JSON.stringify(cmsTable));
+    refreshDOMTable();
 }
 
 refreshDOMTable();
