@@ -165,9 +165,9 @@ let deleteUserFromTable = (userName) => {
     let TempTable = {};
     let cmsTableKeys = Object.keys(cmsTable);
     for(let i = 0; i < cmsTableKeys.length; i++) {
-        if(userName !== cmsTableKeys[i] {
+        if(userName !== cmsTableKeys[i]) {
             tempTable[cmsTableKeys[i]] = cmsTable[cmsTableKeys[i]];
-        })
+        }
     }
 }
 
