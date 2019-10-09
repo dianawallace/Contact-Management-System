@@ -163,6 +163,8 @@ let refreshDOMTable = () => {
 
 let deleteUserFromTable = (userName) => {
     let TempTable = {};
+    let cmsTableKeys = Object.keys(cmsTable);
+    
 }
 
 refreshDOMTable();
