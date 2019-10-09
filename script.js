@@ -26,9 +26,7 @@ let enableDisableNameInput = (option) => {
         newPersonName.disabled = true;
 }
 
-let refreshDOMTable = () => {
-    
-    cmsTable = cmsTableDemo;
+let refreshDOMTable = () => {  
 
     let cmsTableKeys = Object.keys(cmsTable);
     let tableContainer = document.getElementById('cmsTableContainer');
