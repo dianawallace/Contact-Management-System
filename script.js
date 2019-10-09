@@ -174,4 +174,16 @@ let deleteUserFromTable = (userName) => {
     refreshDOMTable();
 }
 
+let init = () => {
+    
+    if(localStorage.getItem(tableKey)) {
+        cmsTable = JSON.parse(localStorage.getItem(tableKey));
+    }   else {
+            cmsTable = cmsTableDemo;
+            localStorage.setItem(tableKey, JSON.stringify(cmsTable));
+    }   
+
+    refreshDOMTable();
+}
+
 refreshDOMTable();
