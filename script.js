@@ -153,14 +153,14 @@ let refreshDOMTable = () => {
             let nameToDelete = $event.target.parentElement.children[0].innerText;
             let isSure = window.confirm('Are you sure you want to delete ' + nameToDelete + '?');
             if(isSure)
-                deleteUserFromTable();
+                deleteUserFromTable(nameToDelete);
         })
     }
 
 }
 
 let deleteUserFromTable = (userName) => {
-    let TempTable = {};
+    let tempTable = {};
     let cmsTableKeys = Object.keys(cmsTable);
     for(let i = 0; i < cmsTableKeys.length; i++) {
         if(userName !== cmsTableKeys[i]) {
@@ -176,9 +176,9 @@ let init = () => {
     
     if(localStorage.getItem(tableKey)) {
         cmsTable = JSON.parse(localStorage.getItem(tableKey));
-    }   else {
-            cmsTable = cmsTableDemo;
-            localStorage.setItem(tableKey, JSON.stringify(cmsTable));
+    }  else {
+        cmsTable = cmsTableDemo;
+        localStorage.setItem(tableKey, JSON.stringify(cmsTable));
     }   
 
     refreshDOMTable();
