@@ -97,19 +97,19 @@ let refreshDOMTable = () => {
         let newPersonAddress = document.getElementById('newPersonAddress').value.trim();
     
         if(newPersonName === '')
-            newPersonName.className = 'input-err';
+            document.getElementById('newPersonName').className = 'input-err';
         else 
-            newPersonName.className = '';   
+            document.getElementById('newPersonName').className = '';   
 
         if(newPersonPhone === '')
-            newPersonPhone.className = 'input-err';
+            document.getElementById('newPersonPhone').className = 'input-err';
         else 
-            newPersonPhone.className = '';   
+            document.getElementById('newPersonPhone').className = '';   
 
         if(newPersonAddress === '')
-            newPersonAddress.className = 'input-err';
+            document.getElementById('newPersonAddress').className = 'input-err';
         else 
-            newPersonAddress.className = ''; 
+            document.getElementById('newPersonAddress').className = ''; 
             
         if(newPersonName !== '' && newPersonPhone !== '' && newPersonAddress !== '' ) {
             let newPerson = {};
